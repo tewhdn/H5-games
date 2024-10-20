@@ -1,5 +1,5 @@
  function checkPassword() {
-            const correctPassword = "12345"; // 设置正确的密码
+            const correctPassword = "shandiana"; // 设置正确的密码
             const inputPassword = document.getElementById("passwordInput").value;
 
             if (inputPassword === correctPassword) {
