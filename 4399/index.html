@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>获取4399账号</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input[type="password"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .content {
+            display: none;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>请输入密码以查看账号</h1>
+        <input type="password" id="password" placeholder="输入密码">
+        <button onclick="showContent()">显示账号</button>
+        <div id="content" class="content">
+            <h2>账号:MCQTSS_iwgy4密码:b3cf6uz1</h2>
+			<h2>账号:miy04vl密码:vltrxp7dbm</h2>
+			<h2>账号:cin73ka密码:zavdxki01l</h2>
+			<h2>账号:ibvx3hd密码:nv9jmhf60b</h2>
+            <h2>账号:nfe24h8密码:tza4elyhcg</h2>
+            <h2>账号:fgikzhj密码:n7xoc0j4uz</h2>
+
+            <p>您已成功输入正确的密码，现在可以看到隐藏的内容。</p>
+        </div>
+    </div>
+    <script>
+        function showContent() {
+            const passwordInput = document.getElementById('password');
+            const content = document.getElementById('content');
+            const correctPassword = 'shandiana'; // 设置正确的密码
+
+            if (passwordInput.value === correctPassword) {
+                content.style.display = 'block';
+            } else {
+                alert('密码错误，请重新输入！');
+            }
+        }
+    </script>
+</body>
+</html>
